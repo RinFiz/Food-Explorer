@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
           cuisine: "china",
           name: "Dumplings",
           description: "Delicious dumplings filled with various ingredients.",
-          recipe: "Sample recipe for Dumplings. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          recipe: "Here's a simple recipe for Dumplings:\n\nIngredients:\n- 250g all-purpose flour\n- 150ml water\n- 250g ground pork\n- 100g shrimp, peeled and deveined\n- 2 green onions, finely chopped\n- 2 cloves garlic, minced\n- 1 tablespoon soy sauce\n- 1 tablespoon sesame oil\n- 1/2 teaspoon salt\n\nTools:\n- Mixing bowl\n- Rolling pin\n- Dumpling wrappers\n- Frying pan\n\nSteps:\n1. In a mixing bowl, combine the ground pork, shrimp, green onions, garlic, soy sauce, sesame oil, and salt. Mix well.\n2. In a separate bowl, mix the all-purpose flour and water to form a dough. Knead until smooth.\n3. Roll out the dough on a floured surface into a thin sheet.\n4. Cut out small circles from the dough using a round cookie cutter or a glass.\n5. Place a spoonful of the pork and shrimp filling in the center of each dumpling wrapper.\n6. Fold the wrapper in half and pinch the edges to seal the dumpling.\n7. Heat a frying pan over medium heat and add some oil.\n8. Place the dumplings in the pan and cook until the bottoms are golden brown.\n9. Pour in a small amount of water, cover the pan, and steam the dumplings for about 5 minutes.\n10. Remove the lid and continue cooking until all the water has evaporated.\n11. Serve the dumplings hot with soy sauce or your favorite dipping sauce.\n",
       },
       {
           cuisine: "china",
