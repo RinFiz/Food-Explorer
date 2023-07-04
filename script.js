@@ -7,43 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
           cuisine: "china",
           name: "Dumplings",
           description: "Delicious dumplings filled with various ingredients.",
-          recipe: "Ingredients:
-            
-1)  250g all-purpose flour
-2)  150ml warm water
-3)  200g ground pork or chicken
-4)  1/2 cup finely chopped cabbage
-5)  2 green onions, finely chopped
-6)  2 cloves garlic, minced
-7)  1 tablespoon soy sauce
-8)  1 teaspoon sesame oil
-9)  Salt and pepper to taste
-
-  Tools:
-
-1)  Mixing bowl
-2)  Rolling pin
-3)  Dumpling wrappers (store-bought or homemade)
-4)  Frying pan or steamer
-5)  Spatula
-
-  Steps:
-
-1)  In a mixing bowl, combine the all-purpose flour and warm water. Mix until a dough forms. Knead the dough for a few minutes until it becomes smooth. Cover with a damp cloth and let it rest for 30 minutes.
-
-2)  In another bowl, mix the ground pork or chicken, chopped cabbage, green onions, minced garlic, soy sauce, sesame oil, salt, and pepper. Stir well to combine the ingredients.
-
-3)  Take a small portion of the dough and roll it into a thin circle on a lightly floured surface using a rolling pin. Repeat this process for the remaining dough.
-
-4)  Place a spoonful of the filling in the center of each dumpling wrapper. Fold the wrapper in half and pinch the edges to seal. You can create pleats along the edges for a decorative touch if desired.
-
-5)  Heat a frying pan over medium heat and add a small amount of oil. Place the dumplings in the pan, ensuring they are not touching each other. Cook for 2-3 minutes until the bottoms become golden brown.
-
-6)  Add a small amount of water to the pan, cover with a lid, and let the dumplings steam for about 8-10 minutes or until the filling is cooked through.
-
-7)  Remove the dumplings from the pan using a spatula and serve them hot with soy sauce, chili oil, or your preferred dipping sauce.
-
-    Enjoy your homemade dumplings!",
+          recipe: "Sample recipe for Dumplings. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       },
       {
           cuisine: "china",
