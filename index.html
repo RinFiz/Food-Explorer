@@ -2,50 +2,141 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="styles.css">
     <title>Food Explorer</title>
+    <style>
+        html {
+  background: linear-gradient(to bottom, #FFD89B, #FF9C4A);
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 18px;
+        }
+
+        .heading {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-image {
+            width: 50px;
+            height: 50px;
+            margin: 0 10px;
+            transition: transform 0.2s;
+        }
+
+        .header-image:hover {
+            transform: scale(1.2);
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            justify-items: center;
+            margin-bottom: 20px;
+        }
+
+        .category {
+            background: linear-gradient(135deg, #FFDFC4, #FFD18C);
+            color: black;
+            border: none;
+            border-radius: 8px;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .category:hover {
+            transform: scale(1.05);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .enlarge-image img {
+            width: 50px;
+            height: 50px;
+            transition: transform 0.2s;
+        }
+
+        .enlarge-image:hover img {
+            transform: scale(1.2);
+        }
+
+    </style>
 </head>
-<body style="font-family:Verdana, Geneva, Tahoma, sans-serif;">
-  <h1 class="heading">
-    <svg xmlns="http://www.w3.org/2000/svg" class="header-image" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-      <path d="M4.519 20.008l16.481 -.008v-3.5a2 2 0 1 1 0 -4v-3.5h-16.722"></path>
-      <path d="M21 9l-9.385 -4.992c-2.512 .12 -4.758 1.42 -6.327 3.425c-1.423 1.82 -2.288 4.221 -2.288 6.854c0 2.117 .56 4.085 1.519 5.721"></path>
-      <path d="M15 13v.01"></path>
-      <path d="M8 13v.01"></path>
-      <path d="M11 16v.01"></path>
-   </svg>
-    Food Explorer
-    <svg xmlns="http://www.w3.org/2000/svg" class="header-image" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-      <path d="M4.519 20.008l16.481 -.008v-3.5a2 2 0 1 1 0 -4v-3.5h-16.722"></path>
-      <path d="M21 9l-9.385 -4.992c-2.512 .12 -4.758 1.42 -6.327 3.425c-1.423 1.82 -2.288 4.221 -2.288 6.854c0 2.117 .56 4.085 1.519 5.721"></path>
-      <path d="M15 13v.01"></path>
-      <path d="M8 13v.01"></path>
-      <path d="M11 16v.01"></path>
-   </svg>
-</h1>
-    <h3 style="margin-bottom: 20px;">Find Fascinating Foods Around The World!</h3>
-    <p><strong>Categories</strong></p>
+<body>
+    <h1 class="heading">
+        <svg xmlns="http://www.w3.org/2000/svg" class="header-image" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M4.519 20.008l16.481 -.008v-3.5a2 2 0 1 1 0 -4v-3.5h-16.722"></path>
+            <path d="M21 9l-9.385 -4.992c-2.512 .12 -4.758 1.42 -6.327 3.425c-1.423 1.82 -2.288 4.221 -2.288 6.854c0 2.117 .56 4.085 1.519 5.721"></path>
+            <path d="M15 13v.01"></path>
+            <path d="M8 13v.01"></path>
+            <path d="M11 16v.01"></path>
+        </svg>
+        Food Explorer
+        <svg xmlns="http://www.w3.org/2000/svg" class="header-image" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M4.519 20.008l16.481 -.008v-3.5a2 2 0 1 1 0 -4v-3.5h-16.722"></path>
+            <path d="M21 9l-9.385 -4.992c-2.512 .12 -4.758 1.42 -6.327 3.425c-1.423 1.82 -2.288 4.221 -2.288 6.854c0 2.117 .56 4.085 1.519 5.721"></path>
+            <path d="M15 13v.01"></path>
+            <path d="M8 13v.01"></path>
+            <path d="M11 16v.01"></path>
+        </svg>
+    </h1>
+    <h3 style="margin-bottom: 30px; margin-top: -5px; font-size: 17px;">Find Fascinating Foods Around The World!</h3>
+    <p style="font-size: 22px;"><strong>Categories</strong></p>
     <div class="buttons">
-        <button class="category"><strong>China</strong></button>
-        <button class="category"><strong>France</strong></button>
-        <button class="category"><strong>Greece</strong></button>
-        <button class="category"><strong>India</strong></button>
-        <button class="category"><strong>Italy</strong></button>
-        <button class="category"><strong>Japan</strong></button>
-        <button class="category"><strong>Mexico</strong></button>
-        <button class="category"><strong>Spain</strong></button>
-        <button class="category"><strong>Thailand</strong></button>
-        <button class="category"><strong>Vietnam</strong></button>
+        <button class="category" src="China-food.html">
+            <img src="https://static.thenounproject.com/png/4483326-200.png" alt="China" width="30" height="30" style="margin-right: 10px;"><strong>China</strong>
+        </button>
+        
+        <button class="category" src="France-food.html">
+            <img src="https://static.thenounproject.com/png/15836-200.png" alt="France" width="30" height="30" style="margin-right: 10px;"><strong>France</strong>
+        </button>
+
+        <button class="category" src="Greece-food.html">
+            <img src="https://cdn-icons-png.flaticon.com/512/4698/4698218.png" alt="Greece" width="30" height="30" style="margin-right: 10px;"><strong>Greece</strong>
+        </button>
+
+        <button class="category" src="India-food.html">
+            <img src="https://cdn-icons-png.flaticon.com/512/5015/5015256.png" alt="India" width="30" height="30" style="margin-right: 10px;"><strong>India</strong>
+        </button>
+
+        <button class="category" src="Italy-food.html">
+            <img src="https://cdn-icons-png.flaticon.com/512/207/207391.png" alt="Italy" width="30" height="30" style="margin-right: 10px;"><strong>Italy</strong>
+        </button>
+
+        <button class="category" src="Japan-food.html">
+            <img src="https://cdn.iconscout.com/icon/free/png-256/japanese-food-819250.png" alt="Japan" width="30" height="30" style="margin-right: 10px;"><strong>Japan</strong>
+        </button>
+        
+        <button class="category" src="Korean-food.html">
+            <img src="https://cdn-icons-png.flaticon.com/512/4525/4525816.png" alt="Korea" width="30" height="30" style="margin-right: 10px;"><strong>Korea</strong>
+        </button>
+
+        <button class="category" src="Mexico-food.html">
+            <img src="https://cdn-icons-png.flaticon.com/512/3946/3946513.png" alt="Mexico" width="30" height="30" style="margin-right: 10px;"><strong>Mexico</strong>
+        </button>
+
+        <button class="category" src="Spain-food.html">
+            <img src="https://cdn-icons-png.flaticon.com/512/4163/4163976.png" alt="Spain" width="30" height="30" style="margin-right: 10px;"><strong>Spain</strong>
+        </button>
+
+        <button class="category" src="Thailand-food.html">
+            <img src="https://cdn-icons-png.flaticon.com/512/909/909095.png" alt="Thailand" width="30" height="30" style="margin-right: 10px;"><strong>Thailand</strong>
+        </button>
     </div>
-    <div id="recipeContainer">
-    </div>
-    <p class="contact" style="margin-top: 50px;"><strong>My Homepage</strong></p>
-    
-    <a href="https://rinfiz-site.vercel.app/" target="_blank" class="enlarge-image">
-      <img src="https://avatars.githubusercontent.com/u/121906192?v=4" alt="Clickable Image" width="50" height="50">
-    </a>
+    <div id="recipeContainer"></div>
 </body>
 </html>
