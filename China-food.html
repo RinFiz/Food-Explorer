@@ -1,1 +1,214 @@
+<!doctype html>
+<html>
+<head>
+<title>China Food Page</title>
+<style>
+  html {
+    height: 200%;
+  }
 
+  body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(135deg, #FFB53E, #FF7D34);
+    background-repeat: no-repeat;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .dropdown-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #000;
+    border-radius: 20px;
+    padding: 10px;
+    transition: border-color 0.3s;
+    margin-top: 15px;
+  }
+
+  .dropdown {
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .dropdown:hover .dropdown-container {
+    border-color: #000;
+  }
+
+  .dropdown img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    border: 3px solid #000;
+    transition: transform 0.3s;
+  }
+
+  .dropdown:hover img {
+    transform: scale(1.1);
+  }
+
+  .dropdown p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    padding: 10px;
+    border: 3px solid #000;
+    border-radius: 15px;
+    background-color: #FFF;
+    margin-top: 5px;
+    z-index: 1;
+    text-align: left;
+  }
+
+  .dropdown.active .dropdown-content {
+    display: block;
+  }
+
+  .dropdown.push-down .dropdown-content {
+    top: calc(100% + 40px);
+  }
+
+  .title {
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: -50px;
+  }
+
+  h1 {
+    padding-top: 10px;
+  }
+
+  .flag-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-top: 15px;
+  }
+
+  .dropdown-button {
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<div class="title">
+  <img class="flag-image" src="https://o.remove.bg/downloads/3c529726-a547-4b96-8566-f2d7c3a206d7/chinese-flag-icon-free-vector-removebg-preview.png" alt="Chinese Flag">
+  <h1>Foods From China</h1>
+  <img class="flag-image" src="https://o.remove.bg/downloads/3c529726-a547-4b96-8566-f2d7c3a206d7/chinese-flag-icon-free-vector-removebg-preview.png" alt="Chinese Flag">
+</div>
+<h3>Click on each image to find out more!</h3>
+
+<div class="dropdown" onclick="toggleDropdown(this)">
+  <div class="dropdown-container">
+    <img src="https://static.vecteezy.com/system/resources/previews/014/873/536/non_2x/steamed-dimsum-or-dumplings-in-a-bamboo-steamer-basket-isolated-cartoon-vector.jpg" alt="Dumplings">
+    <p style="font-size: 19px;">Dumplings</p>
+    <div class="dropdown-content">
+      <p style="font-size: 25px; margin-top: 10px; margin-bottom: 18px;">Description:</p>
+      <p style="font-weight: 400;">Delicious dumplings with various fillings.</p>
+      <p style="font-size: 25px; margin-top: 30px; margin-bottom: 18px;">Recipe:</p>
+      <p><strong>Ingredients:</strong></p>
+      <ul>
+        <li>1 package of dumpling wrappers</li>
+        <li>200g ground pork</li>
+        <li>100g shrimp, peeled and deveined</li>
+        <li>1 tablespoon soy sauce</li>
+        <li>1 tablespoon sesame oil</li>
+        <li>1 tablespoon finely chopped green onions</li>
+        <li>1 tablespoon minced ginger</li>
+        <li>1 clove garlic, minced</li>
+        <li>Salt and pepper to taste</li>
+      </ul>
+      <p><strong>Tools:</strong></p>
+      <ul>
+        <li>Bowl</li>
+        <li>Frying pan</li>
+        <li>Knife</li>
+        <li>Chopping board</li>
+        <li>Steamer basket</li>
+      </ul>
+      <p><strong>Steps:</strong></p>
+      <ol>
+        <li>In a bowl, combine the ground pork, shrimp, soy sauce, sesame oil, green onions, ginger, garlic, salt, and pepper. Mix well.</li>
+        <li>Place a spoonful of the filling in the center of a dumpling wrapper. Moisten the edges with water and fold the wrapper in half to form a half-moon shape. Press the edges to seal.</li>
+        <li>Repeat the process with the remaining wrappers and filling.</li>
+        <li>Bring water to a boil in a steamer basket. Arrange the dumplings in the steamer, leaving space between each dumpling.</li>
+        <li>Steam the dumplings for 15-20 minutes, or until cooked through.</li>
+        <li>Serve the dumplings hot with soy sauce or your favorite dipping sauce.</li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<div class="dropdown" onclick="toggleDropdown(this)">
+  <div class="dropdown-container">
+    <img src="https://media.istockphoto.com/id/1342075058/vector/peking-duck-chinese-cuisine-icon.jpg?s=612x612&w=0&k=20&c=-0WEiMdIQ-FphW4WxVt_52atisQ57Uqs0_xEZ5-ytGM=" alt="Peking Duck">
+    <p style="font-size: 19px;">Peking Duck</p>
+    <div class="dropdown-content">
+        <p style="font-size: 25px; margin-top: 10px; margin-bottom: 18px;">Description:</p>
+        <p style="font-weight: 400;">A classic Chinese dish with crispy skin and tender meat.</p>
+        <p style="font-size: 25px; margin-top: 30px; margin-bottom: 18px;">Recipe:</p>
+        <p><strong>Ingredients:</strong></p>
+      <ul>
+        <li>1 whole duck</li>
+        <li>4 tablespoons soy sauce</li>
+        <li>2 tablespoons hoisin sauce</li>
+        <li>2 tablespoons honey</li>
+        <li>1 tablespoon rice wine vinegar</li>
+        <li>1 teaspoon five-spice powder</li>
+        <li>Salt and pepper to taste</li>
+      </ul>
+      <p><strong>Tools:</strong></p>
+      <ul>
+        <li>Bowl</li>
+        <li>Roasting pan</li>
+        <li>Basting brush</li>
+        <li>Knife</li>
+      </ul>
+      <p><strong>Steps:</strong></p>
+      <ol>
+        <li>Preheat the oven to 350°F (175°C).</li>
+        <li>Clean the duck and pat it dry. Season the duck with salt and pepper.</li>
+        <li>In a bowl, mix together the soy sauce, hoisin sauce, honey, rice wine vinegar, and five-spice powder.</li>
+        <li>Brush the sauce mixture over the duck, ensuring it is well coated.</li>
+        <li>Place the duck on a roasting pan and roast in the preheated oven for about 2 hours, or until the skin is crispy and the meat is tender.</li>
+        <li>Remove the duck from the oven and let it rest for a few minutes before carving.</li>
+        <li>Serve the Peking Duck with steamed pancakes, sliced cucumbers, green onions, and hoisin sauce.</li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<script>
+  function toggleDropdown(dropdown) {
+    dropdown.classList.toggle("active");
+    if (dropdown.nextElementSibling) {
+      var nextDropdown = dropdown.nextElementSibling;
+      if (nextDropdown.classList.contains("dropdown-content")) {
+        nextDropdown.classList.toggle("push-down");
+      }
+    }
+  }
+</script>
+
+</body>
+</html>
