@@ -37,7 +37,7 @@ body {
 }
 
 .category {
-    background-color: #FFDFC4;
+    background-color: #ffd580;
     color: black;
     border: 3px solid black;
     border-radius: 8px;
@@ -61,7 +61,7 @@ body {
 }
 
 .country-box {
-    background-color: #FF9270;
+    background-color: #ffd580;
     border: 3px solid black;
     border-radius: 13px;
     padding: 20px;
