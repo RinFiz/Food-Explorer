@@ -37,7 +37,7 @@ body {
 }
 
 .category {
-    background-color: #FFD580;
+    background-color: #FFDFC4;
     color: black;
     border: 3px solid black;
     border-radius: 8px;
@@ -82,7 +82,7 @@ body {
 }
 
 .recipe-box {
-    background-color: #FF9270;
+    background-color: #ffd580;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
