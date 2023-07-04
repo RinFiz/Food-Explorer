@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const recipeContainer = document.getElementById("recipeContainer");
 
   const recipes = [
-      {
+     {
     cuisine: "china",
     name: "Dumplings",
     description: "Delicious dumplings filled with various ingredients.",
