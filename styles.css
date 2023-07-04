@@ -73,12 +73,12 @@ body {
 
 .country-box h3 {
     margin-top: 0;
-    color: #FFF;
+    color: black;
 }
 
 .country-box p {
     margin-bottom: 0;
-    color: #FFF;
+    color: black;
 }
 
 .recipe-box {
@@ -93,12 +93,12 @@ body {
 
 .recipe-box h3 {
     margin-top: 0;
-    color: #FFF;
+    color: black;
 }
 
 .recipe-box p {
     margin-bottom: 0;
-    color: #FFF;
+    color: black;
 }
 
 .order-number {
@@ -106,5 +106,5 @@ body {
     top: 10px;
     left: 10px;
     font-weight: bold;
-    color: #FFF;
+    color: black;
 }
