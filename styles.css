@@ -37,10 +37,10 @@ body {
 }
 
 .category {
-    background-color: #F4F4F4;
+    background-color: #FFD580;
     color: black;
     border: 3px solid black;
-    border-radius: 5px;
+    border-radius: 8px;
     padding: 10px;
     width: 100%;
     cursor: pointer;
@@ -63,7 +63,7 @@ body {
 .country-box {
     background-color: #FF9270;
     border: 3px solid black;
-    border-radius: 10px;
+    border-radius: 13px;
     padding: 20px;
     margin-bottom: 20px;
     text-align: center;
