@@ -5,7 +5,7 @@
     <title>Food Explorer</title>
     <style>
         html {
-  background: linear-gradient(to bottom, #FFD89B, #FF9C4A);
+            background: linear-gradient(to bottom, #FFD89B, #FF9C4A);
         }
 
         body {
@@ -17,6 +17,31 @@
             margin: 0;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: 18px;
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                font-size: 24px;
+            }
+
+            .heading {
+                font-size: 30px;
+            }
+
+            .header-image {
+                width: 60px;
+                height: 60px;
+            }
+
+            .category {
+                font-size: 26px;
+                padding: 14px;
+            }
+
+            .enlarge-image img {
+                width: 60px;
+                height: 60px;
+            }
         }
 
         .heading {
