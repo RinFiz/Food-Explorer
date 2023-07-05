@@ -1,7 +1,9 @@
 # Food-Explorer
 Find different foods and recipes from around the world.
 
+
 WORK IN PROGRESS (site should be working soon)
+
 Right now I am working on:
 1. Seperating files into seperate html, css, & js files
 2. Fixing Links
