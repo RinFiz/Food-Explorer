@@ -1,6 +1,7 @@
 <!Doctype html>
 <html lang="en">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>China Food Page</title>
 <style>
   html {
@@ -25,7 +26,7 @@
     padding: 10px;
     transition: border-color 0.3s;
     margin-top: 15px;
-    background: linear-gradient(135deg, #FFB53E, #FF7D34); /* Add the linear gradient background */
+    background: linear-gradient(135deg, #FFB53E, #FF7D34);
   }
 
   .dropdown {
@@ -109,6 +110,39 @@
     padding: 5px 10px;
     border-radius: 10px;
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 600px) {
+    body {
+      font-size: 20px;
+    }
+
+    .dropdown img {
+      width: 150px;
+      height: 150px;
+    }
+
+    .dropdown p {
+      font-size: 20px;
+    }
+
+    .dropdown-content {
+      width: 300px;
+      padding: 15px;
+    }
+
+    .title {
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: 30px;
+    }
+
+    .flag-image {
+      width: 120px;
+      height: 120px;
+    }
   }
 </style>
 </head>
