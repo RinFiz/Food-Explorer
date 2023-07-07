@@ -2,9 +2,9 @@
 Find different foods and recipes from around the world.
 
 
-WORK IN PROGRESS (site should be working soon)
+WORK IN PROGRESS (site should be fully working soon)
 
 Right now I am working on:
-1. Seperating files into seperate html, css, & js files.
-2. Fixing Links.
-3. Adding Recipes.
+1. Putting files into seperate html and css files.
+2. Making it visually pleasing.
+3. Adding more recipes and countries.
