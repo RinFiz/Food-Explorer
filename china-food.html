@@ -143,10 +143,52 @@
       width: 70px;
       height: 70px;
     }
-  }
+  }.back-button {
+            width: 30px;
+            height: 30px;
+            margin-top: 17px;
+            margin-left: 28px;
+            margin-bottom: -16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid #000;
+            border-radius: 25%;
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+
+        .back-button:hover {
+            transform: scale(1.2);
+        }
+
+        .back-button:active {
+            background-color: gray;
+        }
+
+        .back-button svg {
+            width: 25px;
+            height: 25px;
+        }
+
+        .back-text {
+            font-size: 18px;
+            margin-bottom: -16px;
+            margin-top: -31px;
+            margin-right: 330px;
+            color: #000;
+        }
 </style>
 </head>
 <body>
+  <a class="back-button" onclick="navigateTo('index.html')">
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-back-up" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M9 14l-4 -4l4 -4"></path>
+        <path d="M5 10h11a4 4 0 1 1 0 8h-1"></path>
+    </svg>
+  </a>
+<h2 class="back-text">Back</h2>
 <div class="title">
   <img class="flag-image" src="https://cdn-icons-png.flaticon.com/512/7533/7533659.png" alt="Chinese Flag">
   <h1>Foods From China</h1>
